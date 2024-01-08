@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background-color: #191919;
+  color: #F2F2F2;
+  min-height: 100vh;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+/* Header */
+
+.header{
+  background-color: #0D0D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  position: relative;
+}
+
+.header--title{
+  color: var(--Blue, #3a86ff);
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.header--title_do{
+  color: var(--Purple, #8338ec);
+}
+
+.header--form{
+  position: absolute;
+  height: 54px;
+  bottom: -27px;
+  width: 100%;
+  max-width: 736px;
+  display: flex;
+  gap: 8px;
+  padding: 0 1rem;
+
+}
+
+.header--form > input{
+  height: 100%;
+  flex: 1;
+  color: #fff;
+  background: #262626;
+  border: 1px solid #0D0D0D;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 1em;
+
+}
+
+.header--form input::placeholder{
+  color: #808080;
+}
+
+.header--form button{
+  height: 100%;
+  padding: 0 1rem;
+  background: #8338ec;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.875em;
+}
+
+/* Task List */
+
+.tasks {
+  width: 100%;
+  max-width: 736px;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 0 1rem;
+}
+
+.tasks--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.tasks--header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tasks--header p {
+  color: #3a86ff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.textPurple {
+  color: #8338ec !important;
+}
+
+.tasks--header span {
+  background: #333333;
+  color: #D9D9D9;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tasks--list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Task */
+
+.task {
+  width: 100%;
+  background: #262626;
+  border: 1px solid #333333;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.task p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #F2F2F2;
+  margin-right: auto;
+}
+
+p.textCompleted {
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.task--check_container {
+  width: 18px;
+  height: 18px;
+  background: none;
+  border: none;
+}
+
+.task--check_container div {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 2px solid #4EA8DE;
+}
+
+.task--check_container svg {
+  width: 100%;
+  height: 100%;
+  color: #5E60CE;
+}
+
+ .trash--btn  {
+  background: none !important;
+  border: none;
+  color: #808080;
+  
+}
