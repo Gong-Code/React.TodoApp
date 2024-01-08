@@ -9,6 +9,8 @@ export const Header = ({ onAddTask }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        if(title.trim() === '') return;
+
         onAddTask(title)
 
         setTitle('')
